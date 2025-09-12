@@ -2,7 +2,7 @@ import fitz
 import os
 import re
 
-pdf_file_path = "HIQL.pdf"
+pdf_file_path = "Diffusion Policy.pdf"
 image_output_folder = "extracted_images"
 HEADER_MARGIN_Y = 50  # Area considered as header (y < 50)
 
@@ -115,7 +115,7 @@ try:
                 if target_block_bbox:
                     final_capture_bbox = target_block_bbox.include_rect(caption_bbox)
 
-                    final_capture_bbox += (-10, -10, 10, 10)  # Margin
+                    final_capture_bbox += (-4, -4, 4, 4)  # Margin
                     pix = page.get_pixmap(clip=final_capture_bbox.irect, dpi=200)
 
                     safe_filename = re.sub(r'[\\/*?:"<>|]', "", block_text.strip())[:40]

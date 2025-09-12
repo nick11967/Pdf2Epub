@@ -2,8 +2,8 @@ import fitz  # PyMuPDF
 import os
 
 ## ----------------- 설정 ----------------- ##
-source_pdf_path = "HIQL.pdf"
-output_pdf_path = "HIQL_blocks_highlighted.pdf"
+source_pdf_path = "Diffusion Policy.pdf"
+output_pdf_path = "Diffusion Policy_blocks_highlighted.pdf"
 
 # 각 요소 타입별 테두리 색상 (R, G, B 형식, 0~1 사이 값)
 # fitz.utils.getColor("red") 와 같이 색상 이름을 사용할 수도 있습니다.
